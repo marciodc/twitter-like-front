@@ -1,22 +1,28 @@
 {
   "name": "twitter_like",
   "version": "0.0.1",
-  "description": "Selação Snowman",
+  "description": "Twitter like App",
   "productName": "Twitter like",
   "author": "Marcio D. Carvalho <marciodc@gmail.com>",
   "private": true,
   "scripts": {
+    "build": "quasar build",
+    "start": "node server.js",
+    "heroku-postbuild": "yarn && yarn build",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
+    "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "quasar": "^1.15.5",
     "quasar-dotenv": "^1.0.5",
     "query-string": "^7.0.0",
+    "serve-static": "^1.14.1",
     "vue-i18n": "^8.0.0",
     "vue-simple-fb-button-login": "^1.1.0",
     "vuelidate": "^0.7.6"
