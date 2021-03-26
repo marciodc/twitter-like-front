@@ -15,7 +15,6 @@ yarn.lock
 package-lock.json
 data*.json
 ofx_exemplo.json
-axios.js
 
 # Editor directories and files
 .idea
