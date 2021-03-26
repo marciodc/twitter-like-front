@@ -22,7 +22,8 @@ module.exports = function (/* ctx */) {
     boot: [
       'i18n',
       'axios',
-      'vuelidate'
+      'vuelidate',
+      'socket_io'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css

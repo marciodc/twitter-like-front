@@ -245,9 +245,22 @@ export default {
       }
     }
   },
+  sockets: {
+    connect() {
+      console.log('usuario conectado')
+    },
+    disconnect() {
+      console.log('usuario desconectado')
+    },
+    newMessage(_msg) {
+        this.loadMessages()
+        this.loadUsers()
+    }
+  },
   async beforeMount () {
     this.loadMessages()
     this.loadUsers()
+    this.$socket.emit('join', this.userid);
   }
 }
 </script>
