@@ -102,7 +102,7 @@
             Veja o que as pessoas estão compartilhando!
           </div>
           <div class="users line2">
-            <b>Siga mais pessoas</b> para ter um feed persolanizado.
+            <b>Siga mais pessoas</b> para ter um feed personalizado.
           </div>
         </div>
         <div class="row" style="margin: 15px">
